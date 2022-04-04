@@ -125,6 +125,7 @@
 /* Start of Main Body */
 .main {
     position:absolute;
+    width: 100vw;
     height: 100vh;
     top: 100px;
     background-color: #515151;
