@@ -72,15 +72,15 @@
 }  
 .bun1,.meat,.bun2{  
     display:block;  
-    width:35px;  
-    height:6px;  
+    width:45px;  
+    height:8px;  
     margin:2px auto;  
     transition: 0.3s;  
 }
 .lett,.tom{
     display:block;  
-    width:35px;  
-    height:3px;  
+    width:45px;  
+    height:4px;  
     margin:2px auto;  
     transition: 0.3s; 
 }
@@ -125,21 +125,18 @@
 /* Start of Main Body */
 .main {
     position:absolute;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
     top: 100px;
     background-color: #515151;
     justify-content: center;
     padding: 5vh;
-    overflow: hidden;
-    z-index: 1;
     display: block;
 }
 
 /* Start of Flip */
-.flipCard{
+.flipCard, .flipCardLast{
     width: 90vw;
-    height: 50vh;
+    height: 300px;
     background-color: #515151;
     position: relative;
     perspective: 1000px;
@@ -150,16 +147,27 @@
     outline: 1px solid white;
 }
 
+.flipCardLast{
+    margin-bottom: 3em;
+}
+
+/* Flip Card Hover Fronts */
 .flipCard:hover .flipCardFront{
     transform: rotateX(-180deg);
 }
-
+.flipCardLast:hover .flipCardFrontLast{
+    transform: rotateX(-180deg);
+}
+/* Flip Card Hover Backs */
 .flipCard:hover .flipCardBack{
     transform: rotateX(0deg);
-
+}
+.flipCardLast:hover .flipCardBackLast{
+    transform: rotateX(0deg);
 }
 
-.flipCardFront, .flipCardBack{
+/* Flip Card Formatting */
+.flipCardFront, .flipCardBack, .flipCardFrontLast, .flipCardBackLast{
     padding-top: 2em;
     font-family: Economica;
     height: 80%;
@@ -171,6 +179,8 @@
     backface-visibility: hidden;
     transition: transform 1s cubic-bezier(0.3, 0.6, 0.3, 1.2);
 }
+/* Flip Card Uniques */
+/* Main Intro Card */
 .flipCardFront{
     background-color: #b2a155;
 }
@@ -183,20 +193,31 @@
 .flipCardBack{
     background-color: #462f02;
     transform: rotateX(180deg);
-
 }
-
+/* Last Flip Card in stack (contact) */
+.flipCardFrontLast{
+    background-color: #521616;
+}
+.flipCardFrontLast h1{
+    padding-top: 4vh;
+    padding-bottom: 7px;
+    font-size: 3rem;
+    min-height: 50%;
+}
+.flipCardBackLast{
+    background-color: #462f02;
+    transform: rotateX(180deg);
+}
 /* End of Flip*/
 
 /* Real Time Clock Start */
 .clockWrapper{
-    display: block;
-    position:absolute;
     height: 75px;
-    width: 100vw;
+    width: 100%;
     outline: 1px solid red;
     bottom: 0;
     left: 0;
+    position: absolute;
 }
 
 .footerJunk{
