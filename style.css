@@ -66,6 +66,7 @@
     display:block;  
     padding:10px; 
     cursor:cell;   
+    background: transparent;
 }  
 .bun1,.meat,.bun2{  
     display:block;  
