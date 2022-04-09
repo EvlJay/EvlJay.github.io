@@ -32,6 +32,7 @@
     width:100%;
     max-width: 115px;
     max-height: 100px;
+    cursor:cell;
 }
 .bgrMenu{  
     display:flex;  
@@ -43,20 +44,21 @@
     width:50%; 
     height: 300px;
     flex-direction:column;  
-    background-color:rgba(0, 0, 0, 0.8);  
+    background-color:rgba(0, 0, 0, 0.95);  
     border-radius:0px 0px 0px 20px;  
     transition:transform 0.3s ease-in;  
     transform:translate(100%);
-    cursor:cell;
 }  
 .bgrItem{  
     padding:9px;  
     list-style:none;  
 }  
 .navLink{  
-    color:inherit;  
+    color:inherit; 
     text-decoration:none;  
-    cursor:inherit;
+    cursor:cell;
+    font-size: 1.5rem;
+    font-family: Economica;
 }  
 /* Start Burger */
 .hamBurger{  
@@ -125,7 +127,7 @@
     top: 100px;
     background-color: #515151;
     justify-content: center;
-    padding: 5vh;
+    padding: 1vh 1vh 75px 1vh;
     display: block;
 }
 .dualWrapper{
@@ -134,7 +136,6 @@
 }
 /* Start of Flip */
 .flipCard,.flipCard2, .flipCardLast{
-    height: 300px;
     background-color: #515151;
     position: relative;
     perspective: 1000px;
@@ -143,12 +144,13 @@
     justify-content: center;
     overflow: hidden;
 }
-.flipCard,.flipCard2{
-    width: 40vw;
+.flipCard, .flipCard2{
+    height: 300px;
+    width: 45vw;
 }
 .flipCardLast{
-    margin-bottom: 3em;
-    width: 90vw;
+    height: 150px;
+    width: 100%;
 }
 /* Flip Card Hover Fronts */
 .flipCard:hover .flipCardFront{
@@ -187,7 +189,7 @@
 /* Main Intro Card */
 .flipCardFront{
     padding-top:10%;
-    background:rgb(67, 62, 62) -webkit-radial-gradient(90% 90%, 60% 60%, rgba(255,255,255,.15), rgba(255,255,255,0));
+    background:rgb(67, 62, 62) -webkit-radial-gradient(90% 90%, 60% 70%, rgba(255,255,255,.15), rgba(255,255,255,0));
     text-shadow: -4px -3px 5px #000000;
 }
 .flipCardFront h1{
@@ -198,37 +200,37 @@
 }
 .flipCardBack{
     padding: 15% 5% 10% 5%;
-    background:rgb(45, 80, 29) -webkit-radial-gradient(90% 90%, 60% 60%, rgba(255,255,255,.15), rgba(255,255,255,0));
+    background:rgb(45, 80, 29) -webkit-radial-gradient(90% 90%, 60% 70%, rgba(255,255,255,.15), rgba(255,255,255,0));
     text-shadow: -4px -3px 5px #000000;
     transform: rotateX(-180deg);
 }
 /* Main Intro Card 2 */
 .flipCardFront2{
+    position: absolute;
     padding-top:10%;
-    background:rgb(74, 21, 21) -webkit-radial-gradient(10% 90%, 60% 60%, rgba(255,255,255,.15), rgba(255,255,255,0));
+    background:rgb(0, 0, 0) -webkit-radial-gradient(10% 90%, 60% 70%, rgba(255,255,255,.15), rgba(255,255,255,0));
 }
-.flipCardFront2 h1{
-    padding-top: 4vh;
-    padding-bottom: 7px;
-    font-size: 3rem;
-    min-height: 50%;
+.flipCardFront2 img{
+    border-radius: 50%;
+    outline: 10px double grey;
+    height: 130px;
+    border: 2px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: -4px -3px 5px #000000;;
 }
 .flipCardBack2{
-    background-color: #46023b;
+    background:rgb(82, 22, 22) -webkit-radial-gradient(10% 90%, 60% 70%, rgba(255,255,255,.15), rgba(255,255,255,0));
     transform: rotateY(-180deg);
 }
 /* Last Flip Card in stack (contact) */
 .flipCardFrontLast{
-    background-color: #521616;
-}
-.flipCardFrontLast h1{
-    padding-top: 4vh;
-    padding-bottom: 7px;
-    font-size: 3rem;
-    min-height: 50%;
+    background:rgb(82, 22, 22) -webkit-radial-gradient(50% 10%, 50% 80%, rgba(255,255,255,.15), rgba(255,255,255,0));
 }
 .flipCardBackLast{
-    background-color: #460221;
+    background:rgb(61, 22, 82) -webkit-radial-gradient(50% 10%, 50% 80%, rgba(255,255,255,.15), rgba(255,255,255,0));
     transform: rotateX(180deg);
 }
 /* End of Flip*/
@@ -237,7 +239,6 @@
 .clockWrapper{
     height: 75px;
     width: 100%;
-    outline: 1px solid red;
     bottom: 0;
     left: 0;
     position: absolute;
