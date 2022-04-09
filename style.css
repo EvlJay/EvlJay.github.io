@@ -3,7 +3,8 @@
     margin:0;
     padding:0; 
     box-sizing: border-box;
-    color:rgb(81, 81, 81); 
+    color:rgb(255, 255, 255);
+    background-color: rgb(81,81,81);
     font-size: 1em; 
     max-width: 100%;
 }  
@@ -136,7 +137,6 @@
 }
 /* Start of Flip */
 .flipCard,.flipCard2, .flipCardLast{
-    background-color: #515151;
     position: relative;
     perspective: 1000px;
     display: flex;
@@ -197,6 +197,9 @@
     padding-bottom: 7px;
     font-size: 3rem;
     min-height: 50%;
+}
+.flipCardFront h1, p{
+    background: transparent;
 }
 .flipCardBack{
     padding: 15% 5% 10% 5%;
