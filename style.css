@@ -257,13 +257,14 @@ a{
     bottom: 0;
     left: 0;
     position: fixed;
-    outline: 1px solid white;
+    background: #202125;
 }
 
 .footerJunk{
     text-align: center;
     height: 30px;
     padding: 9px 0 0 0;
+    background: inherit;
 }
 
 .clock {
@@ -291,15 +292,16 @@ a{
     text-align: center;
     margin-bottom: 15px;
     padding-bottom: 5px;
-    outline: 3px dashed orange;
 }
 .resumeButtons button{
-    background:rgb(66, 67, 78) -webkit-radial-gradient(90% 90%, 60% 70%, rgba(255,255,255,.15), rgba(255,255,255,0));
+    background:rgb(32, 33, 37) 
+        -webkit-radial-gradient(50% 50%, 40% 40%, rgba(255,255,255,.15), rgba(255,255,255,0));
     width: 100px;
     height: 50px;
     cursor: cell;
-    border-radius: 25%;
+    border-radius: 30%;
     box-shadow: inset 0 1px 0 0 #000000;
+    text-shadow: 1px 2px 1px #000000;
 }
 .resumeButtons h1, p{
     font-family: Economica;
@@ -317,7 +319,6 @@ a{
     width: 450px;
     height: 600px;
     margin: auto;
-    outline: 2px solid green;
     position: relative;
     overflow: hidden;
 }
@@ -325,7 +326,31 @@ a{
     height: 600px;
     width: 100%;
 }
-
-
-
 /* End of Main Body */
+/* Scrollbar Stuff */
+/* Firefox */
+*{
+    scrollbar-width:12px;
+    scrollbar-color: #202125 rgb(88, 0, 0);
+}
+  /* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+      width: 5px;
+
+}
+*::-webkit-scrollbar-track {
+    background: rgb(32, 33, 37);
+    outline: 7px solid #202125;
+
+    border: 4px solid inherit;
+    background-clip: content-box;
+}
+*::-webkit-scrollbar-thumb {
+    background-color: rgb(149, 202, 227);    
+    border-radius: 10px;
+    -webkit-box-shadow: rgb(149, 202, 227) 0 0 6px 2px;
+    box-shadow: rgb(149, 202, 227) 0 0 6px 2px;
+  }
+::-webkit-scrollbar-thumb:hover {
+    background-image: linear-gradient(45deg, rgb(0, 128, 255), #9c68fe);
+}
