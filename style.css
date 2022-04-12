@@ -261,7 +261,7 @@ a{
 }
 .flipCardBackLast{
     line-height: 100px;
-    background:rgb(0, 0, 0) -webkit-radial-gradient(50% 10%, 50% 80%, rgba(255,255,255,.15), rgba(255,255,255,0));
+    background:rgb(67, 62, 62) -webkit-radial-gradient(50% 10%, 50% 80%, rgba(255,255,255,.15), rgba(255,255,255,0));
     transform: rotateX(180deg);
 }
 .flipCardBackLast img{
