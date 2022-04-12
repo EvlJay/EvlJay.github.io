@@ -269,9 +269,7 @@ a{
     background-color: transparent;
     max-height: 40px;
 }
-
 /* End of Flip*/
-
 /* Real Time Clock Start */
 .clockWrapper{
     height: 75px;
@@ -282,14 +280,12 @@ a{
     z-index: 98;
     background: #202125;
 }
-
 .footerJunk{
     text-align: center;
     height: 30px;
     padding: 9px 0 0 0;
     background: inherit;
 }
-
 .clock {
     text-align: center;
     border: 2px solid rgb(153, 153, 153);
@@ -307,8 +303,8 @@ a{
 .mainWrapper{
     height: 100%;
     width: 90%;
-    margin: auto;
-    margin-bottom: 25px;
+    margin: 25px auto 25px auto;
+
 }
 .resumeButtons{
     height: 115px;
