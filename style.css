@@ -137,10 +137,10 @@ a{
 .main {
     position:absolute;
     width: 100%;
-    top: 100px;
+    top: 90px;
     background-color: rgb(81, 81, 81);
     justify-content: center;
-    padding: 2vh 1vh 75px 1vh;
+    padding: 0 1vh 75px 1vh;
     display: block;
     z-index: 1;
 }
@@ -187,7 +187,7 @@ a{
 }
 
 /* Flip Card Formatting */
-.formCard,.flipCardBack2,.flipCardFront2,.flipCardFront, .flipCardBack, .flipCardFrontLast, .flipCardBackLast{
+.flipCardBack2,.flipCardFront2,.flipCardFront, .flipCardBack, .flipCardFrontLast, .flipCardBackLast{
     font-family: Economica;
     height: 80%;
     width: 90%;
@@ -202,7 +202,7 @@ a{
 /* Main Intro Card */
 .flipCardFront{
     padding-top:10%;
-    background:rgb(67, 62, 62) -webkit-radial-gradient(90% 90%, 60% 70%, rgba(255,255,255,.15), rgba(255,255,255,0));
+    background:rgb(67, 62, 62) -webkit-radial-gradient(90% 90%, 70% 80%, rgba(255,255,255,.15), rgba(255,255,255,0));
     text-shadow: -4px -3px 5px #000000;
 }
 .flipCardFront h1{
@@ -216,7 +216,7 @@ a{
 }
 .flipCardBack{
     padding: 15% 5% 10% 5%;
-    background:rgb(25, 42, 17) -webkit-radial-gradient(90% 90%, 60% 70%, rgba(255,255,255,.15), rgba(255,255,255,0));
+    background:rgb(25, 42, 17) -webkit-radial-gradient(90% 90%, 80% 70%, rgba(255,255,255,.15), rgba(255,255,255,0));
     text-shadow: -4px -3px 5px #000000;
     transform: rotateX(-180deg);
 }
@@ -224,7 +224,7 @@ a{
 .flipCardFront2{
     position: absolute;
     padding-top:10%;
-    background:rgb(0, 0, 0) -webkit-radial-gradient(10% 90%, 60% 70%, rgba(255,255,255,.15), rgba(255,255,255,0));
+    background:rgb(0, 0, 0) -webkit-radial-gradient(20% 90%, 80% 70%, rgba(255,255,255,.15), rgba(255,255,255,0));
 }
 .flipCardFront2 img{
     border-radius: 50%;
@@ -235,11 +235,11 @@ a{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    box-shadow: -4px -3px 5px #000000;;
+    box-shadow: -4px -3px 5px #000000;
 }
 .flipCardBack2{
     padding: 5px 5% 10% 5%;
-    background:rgb(82, 22, 22) -webkit-radial-gradient(10% 90%, 60% 70%, rgba(255,255,255,.15), rgba(255,255,255,0));
+    background:rgb(82, 22, 22) -webkit-radial-gradient(20% 90%, 80% 70%, rgba(255,255,255,.15), rgba(255,255,255,0));
     transform: rotateY(-180deg);
 }
 .flipCardBack2 h1{
@@ -252,63 +252,24 @@ a{
 }
 /* Last Flip Card in stack (contact) */
 .flipCardFrontLast{
-    background:rgb(63, 64, 71) -webkit-radial-gradient(50% 10%, 50% 80%, rgba(255,255,255,.15), rgba(255,255,255,0));
+    background:rgb(27, 34, 92) -webkit-radial-gradient(50% 10%, 50% 80%, rgba(255,255,255,.15), rgba(255,255,255,0));
+}
+.flipCardFrontLast h2{
+    background-color: transparent;
+    margin: 20px auto;
+    font-size: 1.5rem;
 }
 .flipCardBackLast{
-    background:rgb(30, 40, 90) -webkit-radial-gradient(50% 10%, 50% 80%, rgba(255,255,255,.15), rgba(255,255,255,0));
+    line-height: 100px;
+    background:rgb(0, 0, 0) -webkit-radial-gradient(50% 10%, 50% 80%, rgba(255,255,255,.15), rgba(255,255,255,0));
     transform: rotateX(180deg);
 }
-/* Form */
-.alert{
-    background-color: rgb(202, 64, 64, .9);
-    width:100%;
-    z-index: 999;
-    position:fixed;
-    margin-top: 80px;
-}
-.alert h2{
+.flipCardBackLast img{
+    vertical-align:middle;
     background-color: transparent;
+    max-height: 40px;
 }
-.hide{
-    background-color: rgb(0, 0, 0, .9);
-    width:100%;
-    height:100%;
-    z-index: 998;
-    position: fixed;
-    margin-top: -10px;
-}
-.formWrapper{
-    position:absolute;
-    font-family: Economica;
-    width: 100%;
-    height: 650px;
-    text-align: center;
-    padding: 90px 0 0 0;
-    z-index: 1;
-    background:rgb(46, 51, 71) -webkit-radial-gradient(50% 45%, 50% 80%, rgba(255,255,255,.15), rgba(255,255,255,0));
-}
-.formControl{
-    background-color: transparent;
-}
-.formControl h2, label{
-    font-size: 1.4rem;
-    background-color: transparent;
-}
-.formControl h2{
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-.comments{
-    margin-top: 20px;
-}
-.buttons{
-    background:rgb(46, 48, 53) 
-    -webkit-radial-gradient(50% 50%, 50% 50%, rgba(255,255,255,.15), rgba(255,255,255,0));
-    border-radius: 10px;
-    height: 30px;
-    width: 100px;
-}
-/* End of Form*/
+
 /* End of Flip*/
 
 /* Real Time Clock Start */
@@ -388,6 +349,105 @@ a{
     height: 600px;
     width: 100%;
 }
+/* About Page */
+.aboutWrapper{
+    position:relative;
+    display: block;
+    justify-content: center;
+    font-family: Economica;
+    width: 90%;
+    height: 100%;
+    text-align: center;
+    padding: 20px 0 20px 0;
+    margin: 20px auto 5px auto;
+    background:rgb(21, 72, 97) -webkit-radial-gradient(60% 70%, 60% 70%, rgba(255,255,255,.15), rgba(255,255,255,0));
+    z-index: 1;
+    border-radius: 20px;
+    box-shadow: inset 2px 2px 5px #000000;
+}
+.aboutMe{
+    position: relative;
+    margin: 0 auto;
+    width: 90%;
+    text-shadow: 1px 1px 1px #000000;
+    background-color: transparent;
+    z-index: 5;
+}
+.aboutMe h1{
+    background-color: transparent;
+}
+.aboutMeSegment{
+    width: 90%;
+    position:relative;
+    margin: 0 auto;
+    padding: 5px 10px 10px 5px;
+    border-radius: 15px;
+    background-color: rgb(0, 0, 0, .5);
+    box-shadow: inset 2px 2px 5px #000000;
+}
+.aboutMeSegment img{
+    max-height: 400px;
+}
+.segmentSpacer{
+    position: relative;
+    margin: 2px auto;
+    width: 2px;
+    height: 2px;
+    background-color: antiquewhite;
+}
+/* Email Form */
+.alert{
+    background-color: rgba(214, 93, 0, 0.74);
+    width:100%;
+    z-index: 999;
+    position:fixed;
+    margin-top: 80px;
+    text-shadow: 1px 1px 1px #000000;
+
+}
+.alert h2{
+    background-color: transparent;
+}
+.hide{
+    background-color: rgb(0, 0, 0, .9);
+    width:100%;
+    height:100%;
+    z-index: 998;
+    position: fixed;
+    margin-top: -10px;
+}
+.formWrapper{
+    position:absolute;
+    font-family: Economica;
+    width: 100%;
+    height: 650px;
+    text-align: center;
+    padding: 90px 0 0 0;
+    z-index: 1;
+    background:rgb(46, 51, 71) -webkit-radial-gradient(50% 45%, 50% 80%, rgba(255,255,255,.15), rgba(255,255,255,0));
+}
+.formControl{
+    background-color: transparent;
+}
+.formControl h2, label{
+    font-size: 1.4rem;
+    background-color: transparent;
+}
+.formControl h2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.comments{
+    margin-top: 20px;
+}
+.buttons{
+    background:rgb(46, 48, 53) 
+    -webkit-radial-gradient(50% 50%, 50% 50%, rgba(255,255,255,.15), rgba(255,255,255,0));
+    border-radius: 10px;
+    height: 30px;
+    width: 100px;
+}
+/* End of Form*/
 /* End of Main Body */
 /* Scrollbar Stuff */
 /* Firefox */
@@ -414,5 +474,8 @@ a{
     box-shadow: rgb(149, 202, 227) 0 0 6px 2px;
   }
 ::-webkit-scrollbar-thumb:hover {
-    background-image: linear-gradient(45deg, rgb(0, 128, 255), #9c68fe);
+    background-color: rgb(82, 135, 160);    
+    border-radius: 10px;
+    -webkit-box-shadow: rgb(82, 135, 160) 0 0 6px 2px;
+    box-shadow: rgb(82, 135, 160) 0 0 6px 2px;
 }
