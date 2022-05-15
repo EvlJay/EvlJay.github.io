@@ -266,7 +266,8 @@ a{
     font-size: 1.5rem;
 }
 .flipCardBackLast{
-    line-height: 60px;
+    padding-top: 2%;
+    line-height: 50px;
     background:rgb(67, 62, 62) -webkit-radial-gradient(50% 10%, 50% 80%, rgba(255,255,255,.15), rgba(255,255,255,0));
     transform: rotateX(180deg);
 }
