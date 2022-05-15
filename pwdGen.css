@@ -6,6 +6,13 @@
   --accentPink: rgb(235, 20, 141);
 }
 
+@media screen and (max-width: 700px) {
+  .pwdGenMain {
+    max-width: 70vw;
+    min-width: 340px;
+  }
+}
+
 @font-face {
   font-family: BogleReg;
   src: url(https://i5.walmartimages.com/dfw/63fd9f59-a78c/fcfae9b6-2f69-4f89-beed-f0eeb4237946/v1/BogleWeb_subset-Regular.woff2);
@@ -40,7 +47,7 @@ body {
   
   .form {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto ;
     row-gap: 1rem;
     column-gap: 3rem;
     justify-content: center;
@@ -78,7 +85,7 @@ body {
     padding: 1rem;
     border: 1.5px solid var(--backMain);
     height: 2rem;
-    width: 350px;
+    width: 95%;
     margin-bottom: 30px;
     display: flex;
     justify-content: center;
