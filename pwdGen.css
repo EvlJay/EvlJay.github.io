@@ -1,0 +1,111 @@
+:root {
+  --baseWhite: rgb(255, 255, 255);
+  --backMain: rgb(4, 31, 65);
+  --backSec: rgb(0, 113, 206);
+  --accent: rgb(255, 194, 32);
+}
+
+@font-face {
+  font-family: BogleReg;
+  src: url(https://i5.walmartimages.com/dfw/63fd9f59-a78c/fcfae9b6-2f69-4f89-beed-f0eeb4237946/v1/BogleWeb_subset-Regular.woff2);
+}
+@font-face {
+  font-family: BogleBold;
+  src: url(https://i5.walmartimages.com/dfw/63fd9f59-a78c/fcfae9b6-2f69-4f89-beed-f0eeb4237946/v1/BogleWeb_subset-Bold.woff2);
+}
+
+body {
+    background-color: var(--backMain);
+    margin: 0;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: BogleReg;
+}
+  
+  .pwdGenMain {
+    background-color: var(--backSec);
+    padding: 3rem;
+    border-radius: 1rem;
+    border: 2px solid var(--accent);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 13px 13px 15px black;
+ }
+  
+  .form {
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 1rem;
+    column-gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    accent-color: var(--accent);
+    text-shadow: 2px 2px 1px black;
+ }
+  
+  .title {
+    margin: 0;
+    text-align: center;
+    font-family: BogleBold;
+    text-shadow: 2px 2px 2px black;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  .charAmt {
+    accent-color: var(--accent);
+    display: flex;
+    align-items: center;
+  }
+  
+  .numInput {
+    width: 2rem;
+    box-shadow: 5px 5px 7px black;
+    border: 0;
+  }
+  
+  .pwdDisp {
+    background-color: var(--baseWhite);
+    color: var(--backMain);
+    padding: 1rem;
+    border: 1.5px solid var(--backMain);
+    height: 2rem;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-break: break-all;
+    border-radius: .5rem;
+    box-shadow: 5px 5px 7px black;
+  }
+  
+  .secCheck {
+    grid-column: span 2;
+  }
+
+  .pwdGen {
+    grid-column: span 2;
+    background-color: var(--baseWhite);
+    border: 1.5px solid var(--backMain);
+    font-family: BogleBold;
+    font-size: 1rem;
+    color: var(--backMain);
+    padding: .5rem 1rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 7px black;
+  }
+  
+  .pwdGen:hover {
+    background-color: var(--accent);
+    border: 1.5px solid var(--backMain);
+    color: var(--backMain);
+
+  }

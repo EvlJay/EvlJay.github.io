@@ -253,10 +253,11 @@ a{
 /* Last Flip Card in stack (contact) */
 .flipCardFrontLast{
     background:rgb(27, 34, 92) -webkit-radial-gradient(50% 10%, 50% 80%, rgba(255,255,255,.15), rgba(255,255,255,0));
+    text-shadow: 1px 4px 5px #000000;
 }
 .flipCardFrontLast h2{
     background-color: transparent;
-    margin: 20px auto;
+    margin: 30px auto;
     font-size: 1.5rem;
 }
 .flipCardBackLast{
