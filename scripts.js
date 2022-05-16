@@ -50,7 +50,3 @@ function renderTime() {
     //Time End
 
 }
-
-function js_onload_code() {
-    alert(" Hello, you are learning onload event in JavaScript");
-}
